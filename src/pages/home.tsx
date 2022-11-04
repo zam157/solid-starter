@@ -1,4 +1,3 @@
-import { createSignal } from 'solid-js'
 import Button from '@suid/material/Button'
 
 export default function Home() {

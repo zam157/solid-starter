@@ -1,6 +1,4 @@
 import type { Resource } from 'solid-js'
-import { Suspense, createEffect } from 'solid-js'
-import { useRouteData } from '@solidjs/router'
 
 export default function About() {
   const name = useRouteData<Resource<() => string>>()

@@ -10,6 +10,10 @@ export default defineConfig({
     Unocss(),
     suidPlugin(),
     AutoImport({
+      imports: [
+        'solid-js',
+        '@solidjs/router',
+      ],
       dts: true,
       eslintrc: {
         enabled: true,
