@@ -2,12 +2,19 @@ import { defineConfig } from 'vite'
 import solidPlugin from 'vite-plugin-solid'
 import suidPlugin from '@suid/vite-plugin'
 import Unocss from 'unocss/vite'
+import AutoImport from 'unplugin-auto-import/vite'
 
 export default defineConfig({
   plugins: [
     solidPlugin(),
     Unocss(),
     suidPlugin(),
+    AutoImport({
+      dts: true,
+      eslintrc: {
+        enabled: true,
+      },
+    }),
   ],
   server: {
     port: 3000,

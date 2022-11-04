@@ -22,11 +22,15 @@
     "eslint": "^8.26.0",
     "typescript": "^4.8.4",
     "unocss": "^0.46.3",
+    "unplugin-auto-import": "^0.11.4",
     "vite": "^3.2.2",
     "vite-plugin-solid": "^2.4.0"
   },
   "eslintConfig": {
-    "extends": "@antfu",
+    "extends": [
+      "@antfu",
+      "./.eslintrc-auto-import.json"
+    ],
     "parserOptions": {
       "ecmaFeatures": {
         "jsx": true
