@@ -1,6 +1,6 @@
-import { defineConfig } from '@unocss/vite'
-import { presetMini } from '@unocss/preset-mini'
+import { defineConfig } from 'unocss/vite'
+import { presetUno } from 'unocss'
 
 export default defineConfig({
-  presets: [presetMini()],
+  presets: [presetUno()],
 })
