@@ -10,16 +10,17 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "solid-js": "^1.5.1"
+    "@solidjs/router": "^0.5.0",
+    "solid-js": "^1.6.1"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.29.3",
-    "@unocss/preset-mini": "^0.45.13",
-    "@unocss/vite": "^0.45.13",
+    "@unocss/preset-mini": "^0.46.3",
+    "@unocss/vite": "^0.46.3",
     "eslint": "^8.26.0",
-    "typescript": "^4.8.2",
-    "vite": "^3.0.9",
-    "vite-plugin-solid": "^2.3.0"
+    "typescript": "^4.8.4",
+    "vite": "^3.2.2",
+    "vite-plugin-solid": "^2.4.0"
   },
   "eslintConfig": {
     "extends": "@antfu",
