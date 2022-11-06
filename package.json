@@ -20,6 +20,8 @@
     "@antfu/eslint-config": "^0.29.3",
     "@suid/vite-plugin": "^0.0.3",
     "eslint": "^8.26.0",
+    "eslint-plugin-react": "^7.31.10",
+    "eslint-plugin-solid": "^0.8.0",
     "typescript": "^4.8.4",
     "unocss": "^0.46.3",
     "unplugin-auto-import": "^0.11.4",
@@ -27,17 +29,24 @@
     "vite-plugin-solid": "^2.4.0"
   },
   "eslintConfig": {
-    "extends": [
-      "@antfu",
-      "./.eslintrc-auto-import.json"
+    "plugins": [
+      "solid",
+      "react"
     ],
     "parserOptions": {
       "ecmaFeatures": {
         "jsx": true
       }
     },
+    "extends": [
+      "@antfu",
+      "./.eslintrc-auto-import.json",
+      "plugin:solid/recommended"
+    ],
     "rules": {
-      "no-console": "off"
+      "no-console": "off",
+      "solid/jsx-no-undef": "off",
+      "react/jsx-indent": [2, 2, { "checkAttributes": true }]
     }
   }
 }
