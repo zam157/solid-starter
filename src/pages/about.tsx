@@ -1,7 +1,7 @@
 import type { Resource } from 'solid-js'
 
 export default function About() {
-  const name = useRouteData<Resource<() => string>>()
+  const name = useRouteData<Resource<() => string | undefined>>()
 
   createEffect(() => {
     console.log(name())
