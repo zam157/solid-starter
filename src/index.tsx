@@ -1,13 +1,15 @@
 import 'uno.css'
 import '@unocss/reset/tailwind.css'
-
-import App from './App'
+import routes from '~solid-pages'
 
 render(
-  () => (
-    <Router>
-      <App />
-    </Router>
-  ),
+  () => {
+    const Routes = useRoutes(routes)
+    return (
+      <Router>
+        <Routes />
+      </Router>
+    )
+  },
   document.getElementById('solid-root') as HTMLElement,
 )
