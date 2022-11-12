@@ -4,7 +4,7 @@ export default function About() {
   const name = useRouteData<Resource<() => string | undefined>>()
 
   createEffect(() => {
-    console.log(name())
+    console.log(name!())
   })
 
   return (
@@ -16,7 +16,7 @@ export default function About() {
       <p>
         <span>We love</span>
         <Suspense fallback={<span>...</span>}>
-          <span>&nbsp;{name()}</span>
+          <span>&nbsp;{name!()}</span>
         </Suspense>
       </p>
     </section>
